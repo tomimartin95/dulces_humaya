@@ -5,8 +5,12 @@
     background-repeat: no-repeat;
 }
 
+.fondoProductos {
+    background-color: black;
+}
 
-/* Estilo de Cards */
+
+/* Estilo de Cards - Productos */
 .cardsGenerales {
     border: none;
     background: transparent;
@@ -15,7 +19,69 @@
     color: white;
 }
 
+#product-1 {
+    background-image: url(./IMAGENES/Productos/Producto1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+#product-2 {
+    background-image: url(./IMAGENES/Productos/Producto2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#product-3 {
+    background-image: url(./IMAGENES/Productos/Producto3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#product-4{
+    padding: 2em;
+}
+
+#card-4 {
+    background-color: #BCA177;
+}
+
+
+
+.productos-cards {
+    display: flex;
+    background-color: black;
+}
+
+.productos-img {
+    width: 100%;
+}
+
+.productos-text {
+    color: white;
+    padding: 2em;
+}
+
+.alfajores-img {
+    background-color: #856B4F;
+}
+
+.alfajores-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2em;
+    background-color: #BCA177;
+}
+
+.textoAdicionalProductos {
+    color: #BCA177;
+    font-weight: 700;
+}
+
+#textoAdicionalAlfajores {
+    color: #663F13;
+    font-weight: 700;
+}
 
 
 /* Botones */
@@ -25,26 +91,51 @@
     font-weight: 600;
 }
 
+.botonMasInfo {
+    color: #BCA177;
+    border: solid;
+}
+
+.botonAlfajores {
+    border: solid;
+    color: #663F13;
+}
+
 /* Barras de Separación */
 .productsBar {
     background-color: #5C5656;
 }
 
-.productsBar > p {
+.productsBar>p {
     color: white;
-    padding: 0.5em;
+    padding: 0.75em;
     text-align: center;
+    margin: 0;
 }
-
-
 
 /* Media Query */
 @media screen and (min-width: 480px) and (max-width: 940px) {
     .cardsGenerales {
         font-weight: 500;
     }
+
     #FondoBienvenida {
         background-size: initial;
+    }
+
+    .tituloProducto1 {
+        color: black;
+        font-weight: 700;
+    }
+
+    .tituloProducto2 {
+        color: black;
+        font-weight: 700;
+    }
+
+    .tituloProducto3 {
+        color: black;
+        font-weight: 700;
     }
 }
 
