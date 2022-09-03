@@ -1,9 +1,10 @@
 /* Estilo de presentación */
 #FondoBienvenida {
-    background-image:url(./IMAGENES/Central/imagenCentral.png);
+    background-image: url(./IMAGENES/Central/imagenCentral.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 
 /* Estilo de Cards */
 .cardsGenerales {
@@ -15,22 +16,49 @@
 }
 
 
+
+
+/* Botones */
+#buttonConocer {
+    border-radius: 2em;
+    opacity: 0.75;
+    font-weight: 600;
+}
+
+/* Barras de Separación */
+.productsBar {
+    background-color: #5C5656;
+}
+
+.productsBar > p {
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+}
+
+
+
 /* Media Query */
-@media screen and (min-width: 480px) and  (max-width: 940px) {
+@media screen and (min-width: 480px) and (max-width: 940px) {
     .cardsGenerales {
-        color: black;
+        font-weight: 500;
+    }
+    #FondoBienvenida {
+        background-size: initial;
     }
 }
 
-@media screen and (min-width: 941px) and  (max-width: 1300px) {
+@media screen and (min-width: 941px) and (max-width: 1300px) {
     #fondoBienvenida {
         height: 100%;
     }
+
     #contenedorBienvenida {
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-end;
     }
+
     .contenedorTexto {
         margin: 2rem;
     }
@@ -42,6 +70,7 @@
         flex-flow: row nowrap;
         justify-content: flex-end;
     }
+
     .contenedorTexto {
         margin: 4rem;
     }
