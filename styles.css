@@ -5,10 +5,23 @@
     background-repeat: no-repeat;
 }
 
+#divBienvenida {
+    height: 25em;
+}
+
 .fondoProductos {
     background-color: black;
 }
 
+.contenedorTexto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#textoBienvenida {
+    text-align: center;
+}
 
 /* Estilo de Cards - Productos */
 .cardsGenerales {
@@ -37,19 +50,19 @@
     background-repeat: no-repeat;
 }
 
-#product-4{
+#product-4 {
     padding: 2em;
+    border-radius: 50%;
 }
 
 #card-4 {
     background-color: #BCA177;
 }
 
-
-
 .productos-cards {
     display: flex;
     background-color: black;
+    height: 25rem;
 }
 
 .productos-img {
@@ -57,8 +70,11 @@
 }
 
 .productos-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     color: white;
-    padding: 2em;
+    padding: 4em;
 }
 
 .alfajores-img {
@@ -69,13 +85,20 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 2em;
     background-color: #BCA177;
 }
 
 .textoAdicionalProductos {
     color: #BCA177;
     font-weight: 700;
+}
+
+#divAlfajor {
+    padding: 4em;
+}
+
+#tituloAlfajor {
+    color: #663F13;
 }
 
 #textoAdicionalAlfajores {
@@ -94,16 +117,18 @@
 .botonMasInfo {
     color: #BCA177;
     border: solid;
+    width: fit-content;
 }
 
 .botonAlfajores {
     border: solid;
     color: #663F13;
+    width: fit-content;
 }
 
 /* Barras de Separación */
 .productsBar {
-    background-color: #5C5656;
+    background-color: #5A5454;
 }
 
 .productsBar>p {
@@ -113,30 +138,65 @@
     margin: 0;
 }
 
+/* Características */
+#caracteristicas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #312F2F;
+}
+
+#caracteristicas>div>img {
+    width: 6em;
+    margin: 2em;
+}
+
+.productsBar1>h2 {
+    text-align: center;
+    color: white;
+    padding: 1em;
+    margin-bottom: 0;
+    background-color: #312F2F;
+}
+
+#caracteristicas>div>p {
+    color: #BCA177;
+    text-align: center;
+}
+
+
 /* Media Query */
 @media screen and (min-width: 480px) and (max-width: 940px) {
-    .cardsGenerales {
-        font-weight: 500;
-    }
-
     #FondoBienvenida {
         background-size: initial;
     }
 
-    .tituloProducto1 {
-        color: black;
-        font-weight: 700;
+    #tituloBienvenida {
+        text-align: center !important;
     }
 
-    .tituloProducto2 {
-        color: black;
-        font-weight: 700;
+    .productos-text {
+        width: 100% !important; 
     }
 
-    .tituloProducto3 {
-        color: black;
-        font-weight: 700;
+    #product-1 {
+        background-image: url(./IMAGENES/Productos/Producto1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
+
+    #product-2 {
+        background-image: url(./IMAGENES/Productos/Producto2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #product-3 {
+        background-image: url(./IMAGENES/Productos/Producto3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
 }
 
 @media screen and (min-width: 941px) and (max-width: 1300px) {

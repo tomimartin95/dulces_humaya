@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HUMAYA</title>
-    <!--Estilos de Bootstrap y propios-->
+    <!-- Estilos de Bootstrap y propios -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./IMAGENES/favicon/dulce-de-leche.png" type="image/x-icon">
 </head>
 
 <body class="img-fluid">
     <header>
-        <!--Nav mobile-->
+        <!-- Nav mobile -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <div class="d-flex align-items-center">
@@ -50,13 +51,14 @@
     </header>
 
     <main>
-        <!--Presentación-->
+        <!-- Presentación -->
         <section id="FondoBienvenida">
             <div class="fondoDeHeader img-fluid" id="contenedorBienvenida">
-                <div class="card mt-0 mx-2 cardsGenerales">
-                    <div class="card-body align-items-center fondoTransparente contenedorTexto">
-                        <h4 class="card-title colorTituloLogo">DULCES DEL ALMA</h4>
-                        <p class="card-text mt-3">Los productos HUMAYA son elaborados desde hace más de 50 con
+                <div class="card mt-0 mx-2 cardsGenerales" id="divBienvenida">
+                    <div class="card-body fondoTransparente contenedorTexto">
+                        <h4 class="card-title text-start" id="tituloBienvenida">DULCES DEL ALMA</h4>
+                        <p class="card-text mt-3" id="textoBienvenida">Los productos HUMAYA son elaborados desde hace
+                            más de 50 con
                             tradiciones familiares y sabores caseros, acompañándote día a día.</p>
                         <button href="#" type="button" class="btn btn-dark d-grid gap-2 col-8 mx-auto mt-4 w-50"
                             id="buttonConocer">CONOCENOS</button>
@@ -65,7 +67,7 @@
             </div>
         </section>
 
-        <!--Productos-->
+        <!-- Productos -->
         <section class="fondoProductos">
             <div class="productsBar fs-5">
                 <p>PRODUCTOS</p>
@@ -75,28 +77,26 @@
                     <div class="productos-img w-50" id="product-1">
                     </div>
                     <div class="productos-text w-50">
-                        <h5 class="card-title text-center">DULCE DE LECHE TRADICIONAL</h5>
+                        <h5 class="card-title text-center fs-3">DULCE DE LECHE TRADICIONAL</h5>
                         <p class="card-text">Elaboración artesanal de principio a fin, con un sabor intenso, receta
                             tradicional.</p>
                         <p class="textoAdicionalProductos">Presentación en frasco de 500gr.</p>
                         <button href="#" type="button"
-                            class="btn btn-outline d-grid gap-2 col-8 mx-auto mt-4 w-25 botonMasInfo">+INFO</button>
+                            class="btn btn-outline d-grid gap-2 col-8 mx-auto mt-4 botonMasInfo">+INFO</button>
                     </div>
                 </div>
             </div>
             <div class="card border-0">
                 <div class="card-body m-0 p-0 productos-cards">
                     <div class="productos-text w-50">
-                        <h5 class="card-title text-center">DULCE DE LECHE SIN AZÚCAR</h5>
+                        <h5 class="card-title text-center fs-3">DULCE DE LECHE SIN AZÚCAR</h5>
                         <p class="card-text">Elaboración artesanal para cuidar tu silueta sin renunciar a nada,
                             endulzado naturalmente con stevia.</p>
                         <p class="textoAdicionalProductos">Presentación en frasco de vidrio de 280gr y 580gr.</p>
                         <button href="#" type="button"
-                            class="btn btn-outline d-grid gap-2 col-8 mx-auto mt-4 w-25 botonMasInfo">+INFO</button>
+                            class="btn btn-outline d-grid gap-2 col-8 mx-auto mt-4 botonMasInfo">+INFO</button>
                     </div>
-                    <div class="productos-img w-50" id="product-2">
-
-                    </div>
+                    <div class="productos-img w-50" id="product-2"></div>
                 </div>
             </div>
             <div class="card border-0">
@@ -104,36 +104,62 @@
                     <div class="productos-img w-50" id="product-3">
                     </div>
                     <div class="productos-text w-50">
-                        <h5 class="card-title text-center">DULCE CHOCONUTT</h5>
+                        <h5 class="card-title text-center fs-3">DULCE CHOCONUTT</h5>
                         <p class="card-text">Elaboración artesanal para el capricho dulce, combinación de dulce de
                             leche, chocolate y pasta de avellanas. Una delicia única</p>
                         <p class="textoAdicionalProductos">Presentación en frasco de vidrio de 280gr.</p>
                         <button href="#" type="button"
-                            class="btn btn-outline d-grid gap-2 col-8 mx-auto mt-4 w-25 botonMasInfo">+INFO</button>
+                            class="btn btn-outline d-grid gap-2 col-8 mx-auto mt-4 botonMasInfo">+INFO</button>
                     </div>
                 </div>
             </div>
-            <div class="card border-0">
+            <div class="card border-0 alfajor-div">
                 <div class="card-body m-0 p-0 productos-cards" id="card-4">
-                    <div class="alfajores-text w-50">
-                        <h5 class="card-title text-center">ALFAJORES DE MAICENA</h5>
-                        <p class="card-text">Alfajores de dulce con coco rallado, relleno con 2cm de pura dulzura.
+                    <div class="alfajores-text w-50" id="divAlfajor">
+                        <h5 class="card-title fs-3 text-center" id="tituloAlfajor">ALFAJORES DE MAICENA</h5>
+                        <p class="card-text text-white">Alfajores de dulce con coco rallado, relleno con 2cm de pura
+                            dulzura.
                             Pudiendo elegir entre dulce de leche tradicional, light o choconutt.</p>
                         <p id="textoAdicionalAlfajores">Presentación en caja de 6 y 12 alfajores.</p>
                         <button href="#" type="button"
-                            class="btn btn-outline d-grid gap-2 col-8 mx-auto mt-4 w-25 botonAlfajores">+INFO</button>
+                            class="btn btn-outline d-grid gap-2 col-8 mx-auto mt-4 botonAlfajores">+INFO</button>
                     </div>
                     <img src="./IMAGENES/Productos/Producto4c.png" alt="Alfajores" id="product-4">
-                    <!-- <div class="productos-img w-50" id="product-4"> -->
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- Características -->
+            <div class="productsBar1 fs-5">
+                <h2>LA MEJOR CALIDAD ES PARA VOS</h2>
+                <div id="caracteristicas">
+                    <div>
+                        <img src="./IMAGENES/Caracteristicas/organico(175X175).png" alt="logo1" class="logo">
+                        <p>100%<br>ORGÁNICO</p>
+                    </div>
+                    <div>
+                        <img src="./IMAGENES/Caracteristicas/sintacc(175X175).png" alt="logo2" class="logo">
+                        <p>SIN<br>TACC</p>
+                    </div>
+                    <div>
+                        <img src="./IMAGENES/Caracteristicas/sinconser.png" alt="logo3" class="logo">
+                        <p>SIN<br>CONSERVANTES</p>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section>
+            <!-- Formulario -->
+        </section>
+        <section>
+            <!-- Recetas -->
         </section>
     </main>
 
     <footer>
     </footer>
 
-    <!--Scripts de Bootstrap-->
+    <!-- Scripts de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
