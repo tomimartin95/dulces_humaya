@@ -1,11 +1,29 @@
 /* Estilo de presentación */
 #FondoBienvenida {
-    background-image:url(./IMAGENES/Central/imagenCentral.png);
+    background-image: url(./IMAGENES/Central/imagenCentral.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-/* Estilo de Cards */
+#divBienvenida {
+    height: 25em;
+}
+
+.fondoProductos {
+    background-color: black;
+}
+
+.contenedorTexto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#textoBienvenida {
+    text-align: center;
+}
+
+/* Estilo de Cards - Productos */
 .cardsGenerales {
     border: none;
     background: transparent;
@@ -14,23 +32,184 @@
     color: white;
 }
 
-
-/* Media Query */
-@media screen and (min-width: 480px) and  (max-width: 940px) {
-    .cardsGenerales {
-        color: black;
-    }
+#product-1 {
+    background-image: url(./IMAGENES/Productos/Producto1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 941px) and  (max-width: 1300px) {
+#product-2 {
+    background-image: url(./IMAGENES/Productos/Producto2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#product-3 {
+    background-image: url(./IMAGENES/Productos/Producto3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#product-4 {
+    padding: 2em;
+    border-radius: 50%;
+}
+
+#card-4 {
+    background-color: #BCA177;
+}
+
+.productos-cards {
+    display: flex;
+    background-color: black;
+    height: 25rem;
+}
+
+.productos-img {
+    width: 100%;
+}
+
+.productos-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    padding: 4em;
+}
+
+.alfajores-img {
+    background-color: #856B4F;
+}
+
+.alfajores-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #BCA177;
+}
+
+.textoAdicionalProductos {
+    color: #BCA177;
+    font-weight: 700;
+}
+
+#divAlfajor {
+    padding: 4em;
+}
+
+#tituloAlfajor {
+    color: #663F13;
+}
+
+#textoAdicionalAlfajores {
+    color: #663F13;
+    font-weight: 700;
+}
+
+
+/* Botones */
+#buttonConocer {
+    border-radius: 2em;
+    opacity: 0.75;
+    font-weight: 600;
+}
+
+.botonMasInfo {
+    color: #BCA177;
+    border: solid;
+    width: fit-content;
+}
+
+.botonAlfajores {
+    border: solid;
+    color: #663F13;
+    width: fit-content;
+}
+
+/* Barras de Separación */
+.productsBar {
+    background-color: #5A5454;
+}
+
+.productsBar>p {
+    color: white;
+    padding: 0.75em;
+    text-align: center;
+    margin: 0;
+}
+
+/* Características */
+#caracteristicas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #312F2F;
+}
+
+#caracteristicas>div>img {
+    width: 6em;
+    margin: 2em;
+}
+
+.productsBar1>h2 {
+    text-align: center;
+    color: white;
+    padding: 1em;
+    margin-bottom: 0;
+    background-color: #312F2F;
+}
+
+#caracteristicas>div>p {
+    color: #BCA177;
+    text-align: center;
+}
+
+
+/* Media Query */
+@media screen and (min-width: 480px) and (max-width: 940px) {
+    #FondoBienvenida {
+        background-size: initial;
+    }
+
+    #tituloBienvenida {
+        text-align: center !important;
+    }
+
+    .productos-text {
+        width: 100% !important; 
+    }
+
+    #product-1 {
+        background-image: url(./IMAGENES/Productos/Producto1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #product-2 {
+        background-image: url(./IMAGENES/Productos/Producto2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #product-3 {
+        background-image: url(./IMAGENES/Productos/Producto3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+}
+
+@media screen and (min-width: 941px) and (max-width: 1300px) {
     #fondoBienvenida {
         height: 100%;
     }
+
     #contenedorBienvenida {
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-end;
     }
+
     .contenedorTexto {
         margin: 2rem;
     }
@@ -42,6 +221,7 @@
         flex-flow: row nowrap;
         justify-content: flex-end;
     }
+
     .contenedorTexto {
         margin: 4rem;
     }
