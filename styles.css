@@ -162,7 +162,7 @@
     font-size: large;
 }
 
-.productsBar1>h1 {
+.productsBar1>h2, #recetas {
     text-align: center;
     color: white;
     padding: 2em 0em 0.7em;
@@ -194,6 +194,7 @@
 
 .form-control {
     background-color: #856B4F;
+    height: 1em !important;
 }
 
 #formulario {
