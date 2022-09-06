@@ -243,10 +243,88 @@
     color: white;
 }
 
-.card {
+.card-title {
+    color: #663F13;
+}
+
+.recetasFondo {
     border: 0;
     background-color: #BCA177;
 }
+
+
+/* Footer */
+footer {
+    height: 10em;
+    background-color: #090909
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #090909;
+    padding: 2em;
+}
+
+.logoFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuFooter,
+.redes {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerNav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-decoration: none;
+}
+
+.footerNav>a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.ubicación {
+    display: flex;
+    align-items: center;
+}
+
+.footer-titles {
+    color: #BCA177;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.redes>a {
+    padding: 1em;
+}
+
+.fa-brands {
+    color: white;
+}
+
+.derechos {
+    text-align: center;
+    background-color: #BCA177;
+    color: white;
+}
+
+
 
 /* Media Query */
 @media screen and (min-width: 480px) and (max-width: 940px) {
