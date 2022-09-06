@@ -23,6 +23,7 @@
     text-align: center;
 }
 
+
 /* Estilo de Cards - Productos */
 .cardsGenerales {
     border: none;
@@ -126,6 +127,14 @@
     width: fit-content;
 }
 
+.botonReceta {
+    color: #663F13;
+    border: solid;
+    width: fit-content;
+    margin-bottom: 2em;
+}
+
+
 /* Barras de Separación */
 .productsBar {
     background-color: #5A5454;
@@ -137,6 +146,7 @@
     text-align: center;
     margin: 0;
 }
+
 
 /* Características */
 #caracteristicas {
@@ -162,7 +172,8 @@
     font-size: large;
 }
 
-.productsBar1>h2, #recetas {
+.productsBar1>h2,
+#recetas {
     text-align: center;
     color: white;
     padding: 2em 0em 0.7em;
@@ -177,6 +188,7 @@
     color: #BCA177;
     text-align: center;
 }
+
 
 /* Formulario */
 .seccionForm {
@@ -209,6 +221,32 @@
     padding-bottom: 5%;
 }
 
+
+/* Recetas */
+#recetas {
+    background-color: #191717;
+}
+
+.cardRecetas {
+    background-color: #BCA177;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-group {
+    background-color: #191717;
+}
+
+.recetasText {
+    color: white;
+}
+
+.card {
+    border: 0;
+    background-color: #BCA177;
+}
 
 /* Media Query */
 @media screen and (min-width: 480px) and (max-width: 940px) {
