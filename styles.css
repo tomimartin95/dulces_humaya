@@ -23,6 +23,7 @@
     text-align: center;
 }
 
+
 /* Estilo de Cards - Productos */
 .cardsGenerales {
     border: none;
@@ -126,6 +127,14 @@
     width: fit-content;
 }
 
+.botonReceta {
+    color: #663F13;
+    border: solid;
+    width: fit-content;
+    margin-bottom: 2em;
+}
+
+
 /* Barras de Separación */
 .productsBar {
     background-color: #5A5454;
@@ -137,6 +146,7 @@
     text-align: center;
     margin: 0;
 }
+
 
 /* Características */
 #caracteristicas {
@@ -151,18 +161,169 @@
     margin: 2em;
 }
 
-.productsBar1>h2 {
+.productsBar1>h4 {
     text-align: center;
     color: white;
-    padding: 1em;
+    padding: 1.5em;
     margin-bottom: 0;
     background-color: #312F2F;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+.productsBar1>h2,
+#recetas {
+    text-align: center;
+    color: white;
+    padding: 2em 0em 0.7em;
+    margin-bottom: 0;
+    background-color: #312F2F;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: x-large;
 }
 
 #caracteristicas>div>p {
     color: #BCA177;
     text-align: center;
 }
+
+
+/* Formulario */
+.seccionForm {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.imgForm {
+    width: 50%;
+}
+
+.textoForm {
+    color: #856B4F;
+}
+
+.form-control {
+    background-color: #856B4F;
+    height: 1em !important;
+}
+
+#formulario {
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
+    width: 50%;
+}
+
+#pForm {
+    font-weight: bold;
+    padding-bottom: 5%;
+}
+
+
+/* Recetas */
+#recetas {
+    background-color: #191717;
+}
+
+.cardRecetas {
+    background-color: #BCA177;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-group {
+    background-color: #191717;
+}
+
+.recetasText {
+    color: white;
+}
+
+.card-title {
+    color: #663F13;
+}
+
+.recetasFondo {
+    border: 0;
+    background-color: #BCA177;
+}
+
+
+/* Footer */
+footer {
+    height: 10em;
+    background-color: #090909
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #090909;
+    padding: 2em;
+}
+
+.logoFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuFooter,
+.redes {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerNav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-decoration: none;
+}
+
+.footerNav>a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.ubicación {
+    display: flex;
+    align-items: center;
+}
+
+.footer-titles {
+    color: #BCA177;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.redes>a {
+    padding: 1em;
+}
+
+.fa-brands {
+    color: white;
+}
+
+.derechos {
+    text-align: center;
+    background-color: #BCA177;
+    color: white;
+}
+
 
 
 /* Media Query */
@@ -176,7 +337,7 @@
     }
 
     .productos-text {
-        width: 100% !important; 
+        width: 100% !important;
     }
 
     #product-1 {

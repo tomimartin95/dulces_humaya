@@ -11,6 +11,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="./IMAGENES/favicon/dulce-de-leche.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/089bb77d5e.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="img-fluid">
@@ -56,7 +57,7 @@
             <div class="fondoDeHeader img-fluid" id="contenedorBienvenida">
                 <div class="card mt-0 mx-2 cardsGenerales" id="divBienvenida">
                     <div class="card-body fondoTransparente contenedorTexto">
-                        <h4 class="card-title text-start" id="tituloBienvenida">DULCES DEL ALMA</h4>
+                        <h4 class="card-title text-start text-white" id="tituloBienvenida">DULCES DEL ALMA</h4>
                         <p class="card-text mt-3" id="textoBienvenida">Los productos HUMAYA son elaborados desde hace
                             más de 50 con
                             tradiciones familiares y sabores caseros, acompañándote día a día.</p>
@@ -131,7 +132,7 @@
         <section>
             <!-- Características -->
             <div class="productsBar1 fs-5">
-                <h2>LA MEJOR CALIDAD ES PARA VOS</h2>
+                <h4>LA MEJOR CALIDAD ES PARA VOS</h4>
                 <div id="caracteristicas">
                     <div>
                         <img src="./IMAGENES/Caracteristicas/organico(175X175).png" alt="logo1" class="logo">
@@ -146,17 +147,117 @@
                         <p>SIN<br>CONSERVANTES</p>
                     </div>
                 </div>
+                <h2>CONTÁCTANOS</h2>
+            </div>
+        </section>
+        <section class="seccionForm">
+            <!-- Formulario -->
+            <div class="imgForm">
+                <img src="./IMAGENES/Central/formularioAlfajores.png" alt="img_form" class="w-100">
+            </div>
+            <div id="formulario">
+                <p class="textoForm" id="pForm">Déjanos tu consulta y nuestro personal se podría en contacto a la
+                    brevedad</p>
+                <div class="form-floating">
+                    <p class="textoForm m-0">NOMBRE</p>
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea"></label>
+                </div>
+                <form class="form-floating pt-3">
+                    <P class="textoForm m-0">MAIL</P>
+                    <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com"
+                        value="">
+                    <label for="floatingInputValue"></label>
+                </form>
+                <div class="form-floating pt-3">
+                    <P class="textoForm m-0">CONSULTAS</P>
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 5em !important"></textarea>
+                    <label for="floatingTextarea2"></label>
+                </div>
             </div>
         </section>
         <section>
-            <!-- Formulario -->
-        </section>
-        <section>
             <!-- Recetas -->
+            <h2 id="recetas">RECETAS</h2>
+            <div>
+                <div class="card-group">
+                    <div class="card m-3 recetasFondo">
+                        <img src="./IMAGENES/Recetas/conitos.png" class="card-img-top" alt="CONITOS">
+                        <div class="card-body cardRecetas">
+                            <h5 class="card-title">CONITOS</h5>
+                            <p class="card-text recetasText">Una deliciosa opción para acompañar las meriendas, ese
+                                antojo de media noche o compartir con amigos.</p>
+                        </div>
+                        <button href="#" type="button"
+                            class="btn btn-outline d-grid gap-2 col-8 mx-auto mt-4 botonReceta">PREPARACIÓN</button>
+                    </div>
+                    <div class="card m-3 recetasFondo">
+                        <img src="./IMAGENES/Recetas/pepas.png" class="card-img-top" alt="PEPAS">
+                        <div class="card-body cardRecetas">
+                            <h5 class="card-title">PEPAS</h5>
+                            <p class="card-text recetasText">Las galletitas más tiernas y ricas, rellenas de dulce de
+                                leche, ideales para el mate y la hora del té.</p>
+                        </div>
+                        <button href="#" type="button"
+                            class="btn btn-outline d-grid gap-2 col-8 mx-auto mt-4 botonReceta">PREPARACIÓN</button>
+                    </div>
+                    <div class="card m-3 recetasFondo">
+                        <img src="./IMAGENES/Recetas/torta.png" class="card-img-top" alt="TORTA">
+                        <div class="card-body cardRecetas">
+                            <h5 class="card-title">TORTA NUTT</h5>
+                            <p class="card-text recetasText">La torta de tres capaz más sabrosa del mundo, combina una
+                                base de vainilla, dulce de leche y cubierta de choconutt.</p>
+                        </div>
+                        <button href="#" type="button"
+                            class="btn btn-outline d-grid gap-2 col-8 mx-auto mt-4 botonReceta">PREPARACIÓN</button>
+                    </div>
+                </div>
+            </div>
+            <h2 id="recetas">ENCONTRANOS EN:</h2>
         </section>
     </main>
 
     <footer>
+        <div class="grid-container">
+            <div class="logoFooter">
+                <img src="./IMAGENES/Logo/LogoHumaya100x100.png" alt="logo-footer">
+            </div>
+            <div class="menuFooter">
+                <p class="footer-titles">MENÚ</p>
+                <div class="footerNav">
+                    <a href="">Home</a>
+                    <a href="">Productos</a>
+                    <a href="">Locales</a>
+                    <a href="">Contactos</a>
+                </div>
+            </div>
+            <div class="menuFooter">
+                <p class="footer-titles">NAVEGACIÓN</p>
+                <div class="footerNav">
+                    <a href="">Preguntas frecuentes</a>
+                    <a href="">Distribuidores</a>
+                    <a href="">Prensa</a>
+                    <a href="">Recetas exclusivas</a>
+                </div>
+            </div>
+            <div class="redes">
+                <p class="footer-titles">REDES</p>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
+                <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok fa-2xl"></i></a>
+            </div>
+            <div class="ubicacion text-center">
+                <p class="footer-titles">UBICACIÓN</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.0395235763185!2d-58.37269928425174!3d-34.65370476765276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334aab78be889%3A0xe808082ff7311cac!2sAv.%20Montes%20de%20Oca%202356%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1662500463601!5m2!1ses-419!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    class="p-4"></iframe>
+            </div>
+        </div>
+        <div class="derechos">
+            <p class="m-0 p-0">®Tomás Martín - Curso React 2022 (Codo a Codo 4.0)</p>
+        </div>
     </footer>
 
     <!-- Scripts de Bootstrap -->
