@@ -374,16 +374,47 @@ footer {
     .contenedorTexto {
         margin: 2rem;
     }
+
 }
 
 @media screen and (min-width: 1301px) {
+    .navbar {
+        height: 15vh;
+    }
+
+    .navbar-nav {
+        font-size: large;
+    }
+
+    .navbar-brand {
+        font-size: 2em;
+    }
+
+    .nav-link {
+        font-size: 1.3em;
+    }
+
+    #navbarNav {
+        display: flex;
+        justify-content:flex-end;
+        padding-right: 4em;
+    }
+
+    .logo-header {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
     #contenedorBienvenida {
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     .contenedorTexto {
         margin: 4rem;
+    }
+
+    .tarjetaProductos {
+        height: 60vh;
     }
 }
