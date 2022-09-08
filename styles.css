@@ -369,13 +369,13 @@ footer {
     }
 
 
-/* Características */
-.logo {
-    margin: 1em !important;
-}
+    /* Características */
+    .logo {
+        margin: 1em !important;
+    }
 
 
-/* Formulario */
+    /* Formulario */
     .imgForm {
         display: none;
     }
