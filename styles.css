@@ -336,8 +336,14 @@ footer {
         text-align: center !important;
     }
 
+
+    /* Productos */
     .productos-text {
         width: 100% !important;
+    }
+
+    .textoAdicionalProductos {
+        text-align: center;
     }
 
     #product-1 {
@@ -358,6 +364,57 @@ footer {
         background-repeat: no-repeat;
     }
 
+    .card-text {
+        display: none;
+    }
+
+
+/* Características */
+.logo {
+    margin: 1em !important;
+}
+
+
+/* Formulario */
+    .imgForm {
+        display: none;
+    }
+
+    #formulario {
+        width: 100%;
+        padding: 2em;
+    }
+
+
+    /* Recetas */
+    .recetasFondo {
+        margin: 0 !important;
+    }
+
+    /* Footer */
+    .menuFooter {
+        display: none;
+    }
+
+    .text-center {
+        display: none;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-titles {
+        display: none;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 1em;
+    }
 }
 
 @media screen and (min-width: 941px) and (max-width: 1300px) {
@@ -374,7 +431,6 @@ footer {
     .contenedorTexto {
         margin: 2rem;
     }
-
 }
 
 @media screen and (min-width: 1301px) {
