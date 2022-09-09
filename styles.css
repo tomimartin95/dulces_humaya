@@ -338,9 +338,6 @@ footer {
 
 
     /* Productos */
-    .productos-text,
-    .tarjetaProductos {}
-
     #product-1 {
         background-image: url(./IMAGENES/Productos/Producto1.png);
         background-size: cover;
