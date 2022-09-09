@@ -338,13 +338,8 @@ footer {
 
 
     /* Productos */
-    .productos-text {
-        width: 100% !important;
-    }
-
-    .textoAdicionalProductos {
-        text-align: center;
-    }
+    .productos-text,
+    .tarjetaProductos {}
 
     #product-1 {
         background-image: url(./IMAGENES/Productos/Producto1.png);
@@ -364,9 +359,19 @@ footer {
         background-repeat: no-repeat;
     }
 
+    .productos-cards {
+        display: flex;
+        justify-content: center;
+    }
+
     .card-text {
         display: none;
     }
+
+    #divAlfajor {
+        display: none;
+    }
+
 
     /* Características */
     .logo {
@@ -381,7 +386,7 @@ footer {
 
     #formulario {
         width: 100%;
-        padding: 2em;
+        padding: 4em;
     }
 
 
